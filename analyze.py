@@ -169,10 +169,10 @@ def get_charts(all_symbols, interval, rang):  #gets more data (close, volume), b
 
     headers = {
     'x-rapidapi-host': "yh-finance.p.rapidapi.com",
-    'x-rapidapi-key': "898a9b8ea9msh260ac17e712cfb5p182b9bjsn0882bdf47130"
+    'x-rapidapi-key': ""
     }
 
-    # 'x-rapidapi-key': '5bf93aef49msh25cc8b486ea4bf2p187f01jsn12bd81dfdeb0'
+    assert headers["x-rapidapi-key"] != ""
 
     if interval == "60m":
         secs_ago_cut_off = 1300*hr
